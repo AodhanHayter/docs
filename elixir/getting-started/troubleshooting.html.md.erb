@@ -12,6 +12,7 @@ Here are a few tips to help diagnose and identify problems.
 
 - Run `mix release` locally on your project.
 - Build the Dockerfile locally to verify it builds correctly. `docker build .`
+- Do you have JavaScript dependencies that need to be installed? You'll have to add those build steps to the Dockerfile yourself to ensure all of your dependencies are available.
 - Check the `:prod` config in `config/runtime.exs`, which is not used locally. Carefully review it.
 - Run `fly logs` to check server logs.
 
